@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donation.qrcode_generator.MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter User Id"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_below="@+id/uid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleNumber"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Vehicle Number"
+        android:gravity="center"
+        />
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicleNumber"
+        android:id="@+id/source"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Source"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/source"
+        android:hint="Enter Destination"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GENERATE QR Code"
+        android:id="@+id/button"
+        android:layout_below="@+id/destination"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QRImage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        />
+
+</RelativeLayout>
